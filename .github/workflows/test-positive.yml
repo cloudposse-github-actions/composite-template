@@ -28,7 +28,7 @@ jobs:
           param1: 'true'
 
     outputs:
-      result: "true"
+      result: "${{ steps.current.outputs.result1 }}"
 
   assert:
     runs-on: ubuntu-latest
