@@ -28,7 +28,7 @@ jobs:
           param1: 'false'
 
     outputs:
-      result: "${{ steps.current.result }}"
+      result: "${{ steps.current.result1 }}"
 
   assert:
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
       - uses: nick-fields/assert-action@v1
         with:
           expected: 'false'
-          actual: ${{ needs.test.outputs.result }}
+          actual: "${{ needs.test.outputs.result }}"
 
   teardown:
     runs-on: ubuntu-latest
