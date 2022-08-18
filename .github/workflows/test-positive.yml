@@ -37,7 +37,7 @@ jobs:
       - uses: nick-fields/assert-action@v1
         with:
           expected: 'true'
-          actual: "${{ needs.test.outputs.result1 }}"
+          actual: "${{ needs.test.outputs.result }}"
 
   teardown:
     runs-on: ubuntu-latest

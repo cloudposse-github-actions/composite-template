@@ -12,12 +12,12 @@ inputs:
 outputs:
   result1:
     description: "Output result placeholder"
-    value: ${{ steps.context.outputs.result }}
+    value: "${{ steps.context.outputs.action-result }}"
 runs:
   using: "composite"
   steps:
     - id: context
       shell: bash
       run: |
-          echo "::set-output name=result::${{ inputs.param1 }}"
+          echo "::set-output name=action-result::${{ inputs.param1 }}"
 
