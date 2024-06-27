@@ -8,5 +8,5 @@ repository:
   # Either `true` to enable the wiki for this repository, `false` to disable it.
   has_wiki: false
   name: composite-template
-  description: 'Template repository for composite GitHub action'
+  description: 'Template repository for composite GitHub Action'
   topics: ""
